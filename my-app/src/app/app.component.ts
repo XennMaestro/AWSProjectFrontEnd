@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  add(x: number, y: number):number {
+    return x + y;
+  };
 }

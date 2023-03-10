@@ -29,3 +29,17 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain('my-app app is running!');
   });
 });
+
+describe('Compute', () => {
+  it('should return 3 if input is 1 plus 2', () => {
+    const app = new AppComponent();
+    const result = app.add(1,2);
+    expect(result).toBe(3);
+  })
+
+  it('should return 3 if input is 1 plus 2', () => {
+    const app = new AppComponent();
+    const result = app.add(1,2);
+    expect(result).toBeGreaterThan(2)
+  })
+});
